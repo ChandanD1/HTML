@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <title>LOGIN FROM</title>
+        <link href="/Users/chandan_dhumale/Downloads/bootstrap-5.0.2-dist" rel="stylesheet">
+    </head>
+    <body bgcolor="sky blue">
+
+        <table cellpadding="10px" height="40%" width="20%" style="border-collapse: collapse;" >
+        <tr>
+            <td>
+        <from>
+            <h2>Firstname</h2>
+            <input type="text" placeholder="Firstname">
+            <h2>Lastname</h2>
+            <input type="text" placeholder="Lastname">
+
+            <h2>Gender</h2>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+            <input type="radio" name="Gender" value="Other">Other
+
+            <h2><b>Address</b></h2>
+            <textarea name="Address" placeholder="Address" rows="2"></textarea>
+            <br>
+            
+            <h2>Country</h2>
+            <select name="Country" id ="city">
+              <option value="United States"> United States</option>
+              <option value= "India"> India</option>
+              <option value= "France"> France</option>
+              <option value= "Germany"> Germany</option>
+              <option value= "Singapore"> Singapore</option>
+           </select>
+            
+           <h2>Area Of Interest </h2>
+           <input list ="Interest" name="Interest">
+            <DATALIST ID="INTERESTS">
+               <OPTION VALUE="GENERATIVE AI"></OPTION>
+               <OPTION VALUE="AR/VR"></OPTION>
+               <OPTION VALUE="CYBER SECURITY"></OPTION>
+               <OPTION VALUE="CLOUD COMPUTING"></OPTION>
+               <OPTION VALUE="DATA SCIENCE"></OPTION>
+               <OPTION VALUE="IOT"></OPTION>
+            </DATALIST>
+            <pre>
+            <input type="submit" name="submit">
+            </pre>
+    
+        </from>
+        </td>
+        </tr>
+        </table>
+    </body>
+</html>
