@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+<style>
+  /* body{
+    background-image:url("background.jpg") ;
+  } */
+</style>
+<body><br><br>
+   
+    <form style="background-color: rgb(67, 216, 246); padding: 20px; border-radius: 8px; width: 305px; margin: auto;width:50%">
+        <fieldset>
+            <legend style="font-weight:bold;font-size:20px">Personal Deatils</legend>
+            First Name:<br>
+            <input type="text" name="firstname" placeholder="eg. Chandan"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;" required>
+            <br>
+
+            Last Name:<br>
+            <input type="text" name="lastname" placeholder="eg. Dhumale"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;" required>
+            <br>
+
+            Enter Date Of Birth:<input type="date" name="dob"
+                style="width:100%; padding: 8px; margin: 5px 0;  box-sizing:border-box; border:1px solid #ccc; border-radius: 4px;"required>
+
+            Enter Your Address:<br>
+            <textarea name="address" rows="3" cols="30"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+
+            Gender:<br><br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="Other">Other<br>
+            <br>
+
+            <h3>Country</h3>
+            <select name="Country" id ="city"> 
+              <option value="United States"> United States</option>
+              <option value= "India"> India</option>
+              <option value= "France"> France</option>
+              <option value= "Germany"> Germany</option>
+              <option value= "Singapore"> Singapore</option>
+            </select><br><br>
+
+            Enter Your State:
+            <input list="State" name="State" style="width: 100%;padding:8px;margin:5px 0;box-sizing:border-box;border:1px solid #ccc;border-radius:4px;" required>
+            <datalist id="State" >
+                <option value="Andhra Pradesh">
+                <option value="Arunachal Pradesh">
+                <option value="Assam">
+                <option value="Bihar">
+                <option value="Chhattisgarh">
+                <option value="Goa">
+                <option value="Haryana">
+                <option value="Himachal Pradesh">
+                <option value="Jharkhand">
+                <option value="Karnataka">
+                <option value="Madhya Pradesh">
+                <option value="Maharashtra">
+                <option value="Manipur">
+                <option value="Meghalaya">
+                <option value="Mizoram">
+                <option value="Nagaland">
+                <option value="Odisha">
+                <option value="Punjab">
+                <option value="Rajasthan">
+                <option value="Sikkim">
+                <option value="Tamil Nadu">
+                <option value="Telangana">
+                <option value="Tripura">
+                <option value="Uttar Pradesh">
+                <option value="Uttarakhand">
+                <option value="West Bengal">
+                <option value="Seawoods-Darave" >
+            </datalist><br><br>
+
+            Enter Your City:
+            <input list="City" name="City" style="width: 100%;padding:8px;margin:5px 0;box-sizing:border-box;border:1px solid #ccc;border-radius:4px;" required>
+            <datalist id="City" >
+                <option value="Mumbai">
+                <option value="Delhi">
+                <option value="Bangalore">
+                <option value="Hyderabad">
+                <option value="Ahmedabad">
+                <option value="Chennai">
+                <option value="Kolkata">
+                <option value="Surat">
+                <option value="Pune">
+                <option value="Jaipur">
+            </datalist><br><br>
+
+            contact number: <br><br>
+            <input type="tel" id="emergencyContactNumber" placeholder="Enter a 10-digit number" name="emergencyContactNumber" required>
+            <br>
+
+            Enter your Domain:
+            <select name="domain"
+                style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="AI-ML">AI-Ml</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Backend">Backend</option>
+                <option value="Domain" selected>Domain</option>
+            </select><br><br>
+            <br>
+            <input type="submit" name="next" value="next"
+            style="width: 100%; padding: 8px; margin: 5px 0; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px;">
+            <br>
+        </fieldset>
+    </form>
+</body>
+</html>
