@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gym Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image:url(gym.jpg);
+            background-size: cover;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #3f3d3da4;
+            padding: 20px;
+            border-radius: 5px;
+            
+        }
+
+        input, select {
+            width: 99%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button{
+            background-color: red;
+            text-align: center;
+            width: 20%;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+            margin-left: 40%;
+            transition: 0.4s;
+        }
+        .button:hover{
+            transform: scale(1.1);
+        }
+        h1{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="color:rgb(255, 255, 255)">
+    <form action="#" method="post">
+        <h1><b>Gym Registration Form</b></h1>
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="FULL NAME" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="EMAIL" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="PHONE NO : "  required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="emergencyContact">Emergency Contact:</label>
+        <input type="text" id="emergencyContact" name="emergencyContact" required>
+
+        <label for="workoutTime">Preferred Workout Time:</label>
+        <select id="workoutTime" name="workoutTime">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+        </select>
+
+        <label for="membershipType">Membership Type:</label>
+        <select id="membershipType" name="membershipType">
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <!-- <button type="submit" class="bg-hover:text-gry-700">Submit</button> -->
+
+        <!-- <button  type="submit" class="inline-block bg-gray-800 border-2 px-6 mt-6 text-white uppercase hover:bg-gray-500" >Register now</button> -->
+        <button type="button" class="button">
+            Register now
+        </button>
+    </form>
+
+</body>
+</html>
