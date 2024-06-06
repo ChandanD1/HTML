@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(images/shopping.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .header{
+            background-color: rgba(235, 198, 234, 0.942);
+            padding: 20px 100px;
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+        }
+        .Logo{
+           font-size: 30px;
+           color: #fff;
+           text-decoration: none;
+           font-weight: 800;
+        }
+       .navbar a{
+         position: relative;
+         color: #080000;
+         text-decoration: none;
+         margin-left: 20px;
+         font-weight: 500;
+       }
+       .navbar a::before{
+        content: ' ';
+        position: absolute;
+        top:100%;
+        left:0;
+        width: 0%;
+        height: 10%;
+        background: #000000;
+        transition: 0.3s;
+       }
+       .navbar a:hover::before{
+        width: 100%;
+       }
+       .button{
+         background-color: red;
+         border-radius: 10px;
+         padding:12px 30px;
+         margin-left: 40px;
+         border: none;
+         color: #fff;
+         font-size: 20px;
+         transition:.4s ;
+       }
+       .button:hover{
+          transform: scale(1.3);
+          cursor: pointer;
+       }
+       .container{
+            width: 90%;
+            height: 100%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 100px 50px 200px;
+
+        }
+        .container .card{
+               width: 270px;
+               overflow: hidden;
+               border: 2px solid crimson;
+               border-radius: 15px;
+               box-shadow:0 0 7px rgba(0,0,0,0.8);
+               text-align: center;
+               transition: .4s;
+               background-color: #fff;
+               cursor: pointer;
+        }
+        .container .card:hover{
+            transform: scale(1.1);
+        }
+
+        .container .card .product-image{
+            width: 230px;
+            margin: 20px auto;
+        }
+        .container .card .product-image img{
+            width: 100px;
+            transition: 0.4s
+        }
+        .container .card .product-image img:hover{
+              transform: scale(1.1);
+        }
+        .container .card .product-info h4{
+              font-size: 18x;
+              padding:0 25px;
+              margin-bottom: 10px;
+        }
+        .container .card .btn{
+            width: 100%;
+        }
+        .container .card .btn button{
+            width: 100%;
+            padding: 10px;
+            background: crimson;
+            outline: none;
+            border: 1px solid gray;
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 0 0 15px 15px;
+        }
+    </style>
+</head>
+<body>
+     <header class="header">
+           <a href="#" class="Logo">LOGO</a>
+       
+         <nav class="navbar">
+             <a href="">HOME</a>
+             <a href="">ABOUT</a>
+             <a href="">CONTACT</a>
+             <a href="">SERVICE</a>
+             <button class="button">SIGN IN</button>
+         </nav>
+
+     </header>
+
+
+     <div class="container">
+
+        <div class="card">
+             <div class="product-image">
+              <img src="images/iphone.jpeg" alt="iphone">
+             </div>
+            <div class="product-info">
+              <h4>iphone</h4>
+              <h4>$2500</h4>
+            </div>
+            <div class="btn">
+              <button type="button">Add to cart</button>
+            </div>
+        </div>
+        
+        <div class="card">
+           <div class="product-image">
+              <img src="images/samsung.jpeg" alt="samsung">
+            </div>
+          <div class="product-info">
+              <h4>samsung</h4>
+              <h4>$1500</h4>
+            </div>
+          <div class="btn">
+              <button type="button">Add to cart</button>
+           </div>
+        </div>
+       
+        <div class="card">
+         <div class="product-image">
+            <img src="images/redmi.jpg" alt="redmi">
+          </div>
+        <div class="product-info">
+            <h4>redmi</h4>
+            <h4>$1200</h4>
+          </div>
+        <div class="btn">
+            <button type="button">Add to cart</button>
+         </div>
+      </div>
+ 
+      <div class="card">
+         <div class="product-image">
+            <img src="images/headphone.jpg" alt="headphone">
+          </div>
+        <div class="product-info">
+            <h4>headphone</h4>
+            <h4>$980</h4>
+          </div>
+        <div class="btn">
+            <button type="button">Add to cart</button>
+         </div>
+      </div>
+  
+     </div>
+
+</body>
+</html>
